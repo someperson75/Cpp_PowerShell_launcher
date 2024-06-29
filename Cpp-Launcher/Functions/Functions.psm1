@@ -1,11 +1,10 @@
+Import-Module Datas
+
 function Get-Filename {
 	param(
 		[System.String]$project_name
 	)
-	<#
-	out:
-	filename	 > string finish by .cpp
-	#>
+	
 	Clear-Host
 	if ("" -eq $project_name) {
 		$project_name = $(Read-Host "please enter the project name ")
